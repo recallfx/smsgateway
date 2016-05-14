@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General Settings">
+        <EditTextPreference android:title="Root url" android:key="urls_root" android:summary="Connection url to the server" android:defaultValue="http://192.168.1.3/"  />
+        <EditTextPreference android:title="Company code" android:key="comp_id" android:summary="Company code" android:defaultValue="2370296"  />
+        <EditTextPreference android:title="Company token" android:key="comp_token" android:summary="Company token" android:defaultValue="2cc98e89b3f047e7a7740f940a228fd3"  />
+    </PreferenceCategory>
+</PreferenceScreen>

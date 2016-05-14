@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar" >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="+370 6 8 555555"
+                android:textColor="#99ffffff"
+                android:id="@+id/read_address"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:phoneNumber="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_menu_phone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        android:background="@drawable/bg_repeat"
+        android:padding="16dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="2013-08-27 23:23"
+                android:textColor="#ff999999"
+                android:id="@+id/read_date"
+                android:layout_gravity="left|center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1"
+                android:textColor="#ff999999"
+                android:id="@+id/read_passengers"
+            android:layout_alignTop="@+id/read_imgUsers"
+            android:layout_toRightOf="@+id/read_imgUsers" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Origin"
+                android:textColor="#ff999999"
+                android:id="@+id/read_lblOrigin"
+                android:layout_below="@+id/read_passengers"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textColor="#ff999999"
+                android:id="@+id/read_origin"
+                android:layout_below="@+id/read_lblOrigin"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Destination"
+                android:textColor="#ff999999"
+                android:id="@+id/readl_lblDestination"
+                android:layout_below="@+id/read_origin"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textColor="#ff999999"
+                android:id="@+id/read_destination"
+                android:layout_below="@+id/readl_lblDestination"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Comment"
+                android:textColor="#ff999999"
+                android:id="@+id/read_lblComment"
+                android:layout_below="@+id/read_destination"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textColor="#ff999999"
+                android:id="@+id/read_comment"
+                android:layout_below="@+id/read_lblComment"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Original message body"
+                android:textColor="#ff999999"
+                android:id="@+id/read_lblBody"
+                android:layout_below="@+id/read_status"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textColor="#ff999999"
+                android:id="@+id/read_body"
+                android:layout_below="@+id/read_lblBody"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Status"
+                android:textColor="#ff999999"
+                android:id="@+id/read_lblStatus"
+                android:layout_below="@+id/read_comment"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pending"
+                android:textColor="#ff999999"
+                android:id="@+id/read_status"
+                android:layout_below="@+id/read_lblStatus"
+                android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/read_imgUsers"
+            android:src="@drawable/ic_menu_user_group"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/read_imgLogo"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_launcher"
+            android:alpha="0.8" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+                

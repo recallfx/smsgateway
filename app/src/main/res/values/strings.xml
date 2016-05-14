@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SMS Gateway</string>
+    <string name="action_settings">Settings</string>
+    <string name="sms_status_malformed">Malformed</string>
+    <string name="sms_status_blocked">Blocked</string>
+    <string name="sms_status_pending">Pending</string>
+    <string name="sms_status_complete">Complete</string>
+</resources>

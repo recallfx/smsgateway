@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageButton android:background="@null"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@android:drawable/ic_menu_send"
+                     android:layout_alignParentRight="true"
+                     android:onClick="onClick"
+                     android:id="@+id/sms_send"/>
+    </RelativeLayout>
+    <EditText android:textColor="#ffcccccc"
+              android:gravity="top|left|center"
+              android:background="@null"
+              android:layout_width="fill_parent"
+              android:layout_height="0.0dip"
+              android:hint="Write here ..."
+              android:ems="10"
+              android:layout_weight="1.0"
+              android:inputType="textMultiLine"
+              android:id="@+id/sms_text"/>
+</LinearLayout>

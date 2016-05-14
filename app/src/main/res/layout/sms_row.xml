@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="+370555555"
+            android:textColor="#ff999999"
+            android:id="@+id/sms_address"
+        android:phoneNumber="false"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date"
+            android:textColor="#ff999999"
+            android:id="@+id/sms_date"
+            android:layout_below="@+id/sms_address"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Body"
+            android:textColor="#ff999999"
+            android:id="@+id/sms_body"
+        android:layout_below="@+id/sms_status"
+        android:layout_alignParentLeft="true"
+        android:maxLength="30" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_menu_phone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Status"
+        android:textColor="#ff999999"
+        android:id="@+id/sms_status"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
